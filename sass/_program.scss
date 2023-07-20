@@ -1,0 +1,147 @@
+#program {
+  background-color: #000;
+  padding: 24px 0;
+
+  .programs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+
+    .program-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+
+      h4 {
+        color: #fff;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 32px;
+        letter-spacing: -0.1px;
+      }
+
+      p {
+        color: #fff;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+      }
+
+      ul {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+
+        li {
+          align-items: center;
+          list-style: disc;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 640px) {
+  #program {
+    .programs {
+      display: flex;
+      gap: 29px;
+
+      .program-img {
+        img {
+          height: 550px;
+        }
+      }
+
+      .program-content {
+        display: flex;
+        gap: 29px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 840px) {
+  #program {
+    padding: 32px 0 64px;
+
+    .programs {
+      display: flex;
+      gap: 64px;
+
+      .program-img {
+        img {
+          max-width: 900px;
+          height: 550px;
+        }
+      }
+
+      .program-content {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        gap: 129px;
+
+        div {
+          max-width: 415px;
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          gap: 1rem;
+
+          h4 {
+            text-align: start;
+          }
+
+          p {
+            text-align: start;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  #program {
+    padding: 96px 0;
+
+    .programs {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 133px;
+
+      .program-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        div {
+          max-width: 504px;
+        }
+
+        ul {
+          padding-left: 14px;
+          li {
+            align-items: start;
+            text-align: start;
+          }
+        }
+      }
+    }
+  }
+}

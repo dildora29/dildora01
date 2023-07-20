@@ -1,0 +1,133 @@
+#thoughts {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .thought-one {
+    padding: 24px 24px;
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border-radius: 8px;
+    gap: 56px;
+
+    .thought-content {
+      p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+      }
+    }
+
+    .thought-img {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+
+  .thought-change-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding: 30px 0 0;
+  }
+
+  .thought-two {
+    display: none;
+  }
+
+  .thought-three {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  #thoughts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    // gap: 1rem;
+
+    .thought {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .thought-two {
+      padding: 24px 24px;
+      background-color: #f3f3f3;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      border-radius: 8px;
+      gap: 56px;
+
+      .thought-content {
+        p {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 28px;
+        }
+      }
+
+      .thought-img {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 840px) {
+  #thoughts {
+    padding: 48px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    .thought {
+      display: flex;
+      gap: 30px;
+    }
+
+    .thought-three {
+      padding: 24px 24px;
+      background-color: #f3f3f3;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      border-radius: 8px;
+      gap: 56px;
+
+      .thought-content {
+        p {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 28px;
+        }
+      }
+
+      .thought-img {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  #thoughts {
+    padding: 96px 0;
+
+    .thought-change-img {
+      display: none;
+    }
+  }
+}

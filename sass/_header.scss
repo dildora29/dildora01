@@ -1,0 +1,228 @@
+#header {
+  .navbar {
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+      a {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: normal;
+        color: #000;
+      }
+    }
+    .menyu {
+      display: none;
+    }
+    .navbar-button {
+      display: none;
+    }
+    .navbar-menyu {
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+    }
+  }
+
+  .hero {
+    padding: 18px 0 20px;
+    .hero-left {
+      h1 {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 800;
+        line-height: normal;
+      }
+      p {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: normal;
+        padding: 24px 0 21px;
+      }
+
+      .hero-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        button {
+          width: 135px;
+          height: 38px;
+          border-radius: 30px;
+          background: #ffcf23;
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          border: none;
+
+          font-size: 12px;
+          font-weight: 500;
+          line-height: normal;
+          text-align: center;
+        }
+
+        p {
+          text-align: center;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: normal;
+        }
+      }
+    }
+    .hero-right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 41px 0 0;
+      img {
+        height: 316px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 640px) {
+  #header {
+    .navbar {
+      .logo {
+        a {
+          font-size: 24px;
+        }
+      }
+    }
+    .hero {
+      padding: 24px 0 20px;
+
+      .hero-left {
+        p {
+          font-size: 18px;
+        }
+
+        .hero-button {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 20px;
+
+          p {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: normal;
+          }
+        }
+      }
+      .hero-right {
+        img {
+          height: 499px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 840px) {
+  #header {
+    .navbar {
+      padding: 32px 0;
+      .menyu {
+        display: flex;
+        gap: 24px;
+
+        li {
+          a {
+            color: #000;
+          }
+        }
+      }
+      .navbar-button {
+        display: block;
+
+        button {
+          border: none;
+          width: 114px;
+          height: 45px;
+          border-radius: 30px;
+          background: #000;
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          color: #fff;
+        }
+      }
+      .navbar-menyu {
+        display: none;
+      }
+    }
+
+    .hero {
+      .hero-left {
+        padding: 12px 165px 50px;
+        h1 {
+          font-size: 50px;
+          font-weight: 800;
+          line-height: normal;
+        }
+
+        p {
+          font-size: 24px;
+        }
+
+        .hero-button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          button {
+            width: 135px;
+            height: 45px;
+          }
+
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .hero-right {
+        padding: 0;
+        img {
+          width: 900px;
+          height: 428px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  #header {
+    .navbar {
+      max-width: 1390px;
+      padding: 17px 26px;
+    }
+    .hero {
+      display: flex;
+      align-items: center;
+      padding: 64px 0;
+      gap: 130px;
+
+      .hero-left {
+        flex: 1;
+        padding: 0;
+        h1 {
+          text-align: start;
+        }
+        p {
+          text-align: start;
+        }
+
+        .hero-button {
+          p {
+            text-align: start;
+          }
+        }
+      }
+
+      .hero-right {
+        flex: 1;
+      }
+    }
+  }
+}
